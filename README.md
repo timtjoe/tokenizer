@@ -1,6 +1,6 @@
 # **Scheme Tokenizer in C**
 
-This is a tokenizer I created for the Scheme programming language, marking my first significant C project after six months of learning. It's designed to read Scheme code from standard input and output a list of tokens with their corresponding types. I've focused on building a robust and reliable piece of code, and I believe it's a solid foundation. I'm excited to share it with the community and welcome collaboration.
+This is a tokenizer I created for the Scheme programming language, marking my first significant C project after six months of learning. It's designed to read Scheme code from standard input and output a list of tokens with their corresponding types. I'm excited to share it with the community and welcome collaboration.
 
 ## **Core Functionality**
 
