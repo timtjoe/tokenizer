@@ -8,7 +8,7 @@
 
 Value *tokenize() {
 	Value *list = makeNull();
-	int charRead;
+	char charRead;
 
 	// Loop to read all characters until EOF
 	while ((charRead = getchar()) != EOF) {
@@ -27,7 +27,6 @@ Value *tokenize() {
 		}
 
 		Value *token = NULL;
-			// token = (Value *)talloc(sizeof(Value));
 
 		// Handle different token types
 		if (charRead == '(') {
@@ -35,6 +34,7 @@ Value *tokenize() {
 			token->type = OPEN_TYPE;
 		}
 		else if (charRead == ')') {
+			token = (Value *)talloc(sizeof(Value));
 			token->type = CLOSE_TYPE;
 		}
 		else if (charRead == '#') {
@@ -126,7 +126,7 @@ Value *tokenize() {
 	return list;
 }
 
-void displayTokens(Value *list) {
+void displayTokens(Value* list) {
 	// Display the tokens in the list
 	display(list);
 }
