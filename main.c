@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "tokenizer.h"
-#include "value.h"
-#include "linkedlist.h"
-#include "talloc.h"
+#include "headers/tokenizer.h"
+#include "headers/value.h"
+#include "headers/linkedlist.h"
+#include "headers/talloc.h"
 
 int main() {
     Value *list = tokenize();
