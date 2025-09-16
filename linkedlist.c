@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "linkedlist.h"
-#include "talloc.h"
+#include "headers/linkedlist.h"
+#include "headers/talloc.h"
 
 Value *makeNull() {
 	// Create a new NULL_TYPE value node.

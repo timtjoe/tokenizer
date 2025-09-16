@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-#include "talloc.h"
+#include "headers/talloc.h"
 
 // Node structure for linked list to track allocated pointers.
 typedef struct PointerNode {
@@ -23,7 +23,7 @@ void *talloc(size_t size) {
 	}
 
 	// Create a new node to track the allocated pointer.
-	PointerNode* newNode = malloc(sizeof(PointerNode));
+	PointerNode *newNode = malloc(sizeof(PointerNode));
 	if (newNode == NULL)
 	{
 		// Free the previously allocated memory and exit.
